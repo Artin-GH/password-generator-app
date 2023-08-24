@@ -1,0 +1,24 @@
+$colors: (
+  dark: #24232C,
+  very-dark: #18171F,
+  light: #E6E5EA,
+  grey: #817D92,
+  green: #A4FFAF,
+  red: #F64A4A,
+  orange: #FB7C58,
+  yellow: #F8CD65,
+);
+
+$breakpoints: (
+  tablet: 640px,
+  desktop: 1025px,
+);
+
+$font-family: JetBrainsMono;
+
+
+@mixin breakpoint-up($bp) {
+  @media screen and (min-width: #{map-get($breakpoints, $bp)}) {
+    @content;
+  }
+}

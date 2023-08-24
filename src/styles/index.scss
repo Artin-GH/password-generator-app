@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../fonts/static//JetBrainsMono-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../fonts/static//JetBrainsMono-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+  min-height: 100vh;
+}

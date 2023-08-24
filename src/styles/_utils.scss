@@ -1,0 +1,67 @@
+.text-body {
+  font-size: 16px;
+  font-family: $font-family;
+  font-weight: bold;
+  color: map-get($map: $colors, $key: light);
+}
+.heading-lg, .heading-md {
+  font-family: $font-family;
+  font-weight: bold;
+}
+.heading-lg {
+  font-size: 24px;
+  line-height: 32px;
+}
+.heading-md {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@include breakpoint-up(tablet) {
+  .text-body {
+    font-size: 18px;
+  }
+
+  .heading-lg {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .heading-md {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.checkbox {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border: 1px solid map-get($map: $colors, $key: light);
+  &-wrapper {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  &:checked {
+    border-color: map-get($map: $colors, $key: green);
+  }
+  &:checked + &-icon {
+    display: grid !important;
+  }
+  &-icon {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+    background-color: map-get($map: $colors, $key: green);
+    display: none;
+    color: map-get($map: $colors, $key: very-dark);
+  }
+}
