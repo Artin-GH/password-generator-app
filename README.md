@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [On Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh/hub)
+- Live Site URL: [Hosted on Vercel](https://password-generator-app-fawn.vercel.app/)
 
 ## My process
 
